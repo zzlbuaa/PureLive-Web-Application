@@ -1,0 +1,148 @@
+/* ESSENTIAL CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #484848;
+}
+
+p {
+    font-size: 16px;
+}
+
+a:link {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+/* JUMBOTRON-SLIDER CSS */
+
+#jumbotron-wrapper {
+    width: 100%;
+    height: 400px;
+    padding-top: 73px;
+    position: relative;
+}
+
+#jumbotron-arrow-wrapper {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    top: 270px;
+    margin-top: -24px;
+    z-index: 1;
+}
+
+.jumbotron-arrow {
+    width: 48px;
+    height: 48px;
+    margin: 0 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 48px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    line-height: 52px;
+}
+
+.jumbotron-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.jumbotron-arrow .arrow {
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+}
+
+#left-jumbotron-arrow {
+    float: left;
+}
+
+#right-jumbotron-arrow {
+    float: right;
+}
+
+#slides-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    display: none;
+
+}
+
+#slide-one {
+    background-image:url('./images/jumbotron1.jpg');
+}
+
+#slide-two {
+    background-image:url('./images/jumbotron2.jpg');
+}
+
+#slide-three {
+    background-image:url('./images/jumbotron3.jpg');
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide h1 {
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    max-width: 550px;
+    margin: 15px auto;
+    font-size: 30px;
+}
+
+.slide p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-align: left;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+#slides-dots {
+    position: absolute;
+    width: 48px;
+    height: auto;
+    left: 50%;
+    bottom: 0;
+    margin-left: -24px;
+}
+
+.dot {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-right: 5px;
+}
+
+.dot:last-of-type {
+    margin-right: 0;
+}
+
+.dot.active {
+    background-color: #333;
+}

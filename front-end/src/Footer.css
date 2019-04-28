@@ -1,0 +1,32 @@
+footer{
+    width: 100%;
+}
+
+.footer {
+    background: #fff;
+    font-size: 0.8em;
+    width: 1104px;
+    height: 150px;
+    position: relative;
+    border-top: 1px solid #e4e4e4;
+    margin: 10px auto;
+}
+
+.footer p {
+    text-align: center;
+}
+
+.footer p.title {
+    font-size: 1.2em;
+    padding: 15px;
+}
+
+.footer ul {
+    align-items: center;
+    display: flex;
+    padding: 20px;
+}
+
+.footer ul li {
+    flex: 1;
+}
